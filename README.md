@@ -118,6 +118,8 @@ archangel@iron:percent_encoding_generator~> ./generator.py -i *.txt -e utf_16
 
 ## Looking up a String
 
+Should an encoded value of interest be observed, simply pass that value to the `-l` flag to look up the corresponding value. This is useful only if the proper string or input files are supplied to `-s` or `-i` respectively.
+
 ```
 archangel@iron:percent_encoding_generator~> ./generator.py -i *.txt -l %ff%fe%27%00%20%00%4f%00%52%00%20%00%31%00%3d%00%31%00%3b%00 -c
 [+] Encoding lines from files
